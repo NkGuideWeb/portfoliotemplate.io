@@ -27,7 +27,7 @@ img{
     position: fixed;
     left:0;
     top:50%;
-    transform: translateY(-40%);
+    transform: translateY(-45%);
 }
 
 .social-media > li{
