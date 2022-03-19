@@ -5,13 +5,7 @@
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
 }
-section{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-}
+
 
 body{
     overflow-x: hidden;
@@ -240,16 +234,15 @@ nav{
 }
 
 
-.banner-section{
-  
+.banner-section{ 
     width:100%;
-   
     
 }
 .banner-section__area{
     max-width:900px;
     margin:0 auto;
     display:flex;
+    justify-content: center;
     flex-wrap:wrap;
 
 }
@@ -313,6 +306,9 @@ color:#fff;
     width:250px;
 
 }
+
+
+
 
 
 .services {
@@ -499,6 +495,22 @@ flex-basis: 300px;
 }
 
 
+@media (max-width:1002px)
+{  
+    .contact-us__title{
+        max-width: 600px;
+
+    }
+    .contact-us__container{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+}
+
+
+
 
 /* Teams */
 
@@ -596,3 +608,32 @@ flex-basis: 300px;
     color:#fff;
     background:#111;
   }
+
+  @media (max-width:600px)
+{
+
+    .banner-section__area > .img-panel{
+        flex-grow: 1;
+        justify-content: center;
+    }
+   
+    .banner-section__area > .content-panel{
+
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-media{
+        top:20%;
+        position: absolute;
+    }
+    .service_list{
+        justify-content: center;
+    }
+    .contact-us,.teams{
+        padding:30px;
+    }
+
+}
